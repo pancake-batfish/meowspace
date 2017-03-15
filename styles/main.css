@@ -1,22 +1,67 @@
-
+/*
+===================================
+typography
+===================================
+purple color: #6d5e9b;
+blue color: #449EA5;
+lighter blue color: #C9E7E9;
+green color: #538E42;
+gold color: #A58F44;
+rust color: #9B5440;
+*/
 
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
-/*
-burnt red #9B5440;
-gold #A58F44;
-green #538E42;
-blue #449EA5;
-purple #6D5E9B;
-*/
-
-h1, h2 {
+h1, h2, h2 a {
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
+  font-weight: 500
+}
+
+h2 {
   color: #538E42;
+}
+
+h3 {
+  font-style: italic
+}
+
+/*
+===================================
+header
+===================================
+*/
+header, nav {
+  background-color: #C9E7E9;
+}
+
+header a {
+  text-decoration: none;
+  color: #538E42;
+}
+
+header a:hover {
+  color: #A58F44;
+}
+
+header a:visited {
+  color: #9B5440;
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+header ul {
+  list-style-type: none;
+  float: right;
+}
+
+header li {
+  display: inline;
+  padding: 10px;
 }
 
 /*
@@ -26,6 +71,7 @@ hero banner
 */
 #hero {
   position: relative;
+  clear: both;
 }
 
 #hero-image {
@@ -34,8 +80,8 @@ hero banner
 
 #hero-text {
   position: absolute;
-  top: 120px;
-  left: 30px;
-  font-size: 3rem;
+  top: 260px;
+  left: 40px;
+  font-size: 4rem;
   color: black;
 }
