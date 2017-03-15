@@ -1,0 +1,41 @@
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/*
+burnt red #9B5440;
+gold #A58F44;
+green #538E42;
+blue #449EA5;
+purple #6D5E9B;
+*/
+
+h1, h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #538E42;
+}
+
+/*
+===================================
+hero banner
+===================================
+*/
+#hero {
+  position: relative;
+}
+
+#hero-image {
+  width: 100%;
+}
+
+#hero-text {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  font-size: 3rem;
+  color: black;
+}
