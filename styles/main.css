@@ -30,7 +30,6 @@ h1, h2, h2 a {
 }
 
 h2 {
-  /*color: #538E42;*/
   padding-left: 10px;
 }
 
@@ -63,11 +62,16 @@ header
 */
 header {
   background-color: #C9E7E9;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
 }
 
 
 header h2 {
   font-size: 2rem;
+  display: inline-block;
 }
 
 header ul {
@@ -80,9 +84,15 @@ header li {
   padding: 10px;
 }
 
+nav {
+  display: inline-block;
+  float: right;
+  margin: 25px 10px 0px;
+}
+
 /*
 ===================================
-hero banner
+hero banner, everybody banner
 ===================================
 */
 #hero, #everybody {
@@ -90,16 +100,27 @@ hero banner
   clear: both;
 }
 
+#hero {
+  top: 100px;
+}
+
 #hero-image, #everybody-image {
   width: 100%;
+  z-index: 0;
 }
 
 #hero-text, #everybody-text {
   position: absolute;
-  top: 260px;
   left: 40px;
   font-size: 4rem;
-  /*color: black;*/
+}
+
+#hero-text {
+  top: 360px;
+}
+
+#everybody-text {
+  top: 260px;
 }
 
 /*
@@ -138,9 +159,6 @@ p.button {
   padding: 10px 12px;
 }
 
-.button a:hover {
-  /*color: #A58F44;*/
-}
 
 /*
 ===================================
