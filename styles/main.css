@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /*
 ===================================
 typography
@@ -22,10 +30,18 @@ h1, h2, h2 a {
 
 h2 {
   color: #538E42;
+  padding-left: 10px;
 }
 
 h3 {
-  font-style: italic
+  font-style: italic;
+  font-weight: 400;
+}
+
+p {
+  font-size: .95rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 /*
@@ -33,9 +49,10 @@ h3 {
 header
 ===================================
 */
-header, nav {
+header {
   background-color: #C9E7E9;
 }
+
 
 header a {
   text-decoration: none;
@@ -46,9 +63,6 @@ header a:hover {
   color: #A58F44;
 }
 
-header a:visited {
-  color: #9B5440;
-}
 
 header h2 {
   font-size: 2rem;
@@ -84,4 +98,35 @@ hero banner
   left: 40px;
   font-size: 4rem;
   color: black;
+}
+
+/*
+===================================
+popular posts
+===================================
+*/
+
+article {
+  width: 150px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 2px solid #449EA5;
+  overflow: hidden;
+}
+
+/*
+===================================
+join the club
+===================================
+*/
+#club-text {
+  width: 45%;
+  margin: 0px 10px;
+  float: left;
+}
+
+#club-image {
+  width: 45%;
+  margin: 10px;
 }
