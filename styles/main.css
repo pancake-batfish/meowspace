@@ -24,18 +24,19 @@ rust color: #9B5440;
   color: #449EA5;
 }
 
-h1, h2, h2 a {
+h1, h2, h2 a, h3 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500
 }
 
 h2 {
-  padding-left: 10px;
+  padding-left: 15px;
+  font-size: 2.5rem;
+  color: #538E42;
+  text-align: center;
 }
 
 h3 {
-  font-style: italic;
-  font-weight: 400;
   color: black;
 }
 
@@ -68,9 +69,8 @@ header {
   z-index: 1;
 }
 
-
 header h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   display: inline-block;
 }
 
@@ -102,6 +102,7 @@ hero banner, everybody banner
 
 #hero {
   top: 100px;
+  margin-bottom: 120px;
 }
 
 #hero-image, #everybody-image {
@@ -111,16 +112,17 @@ hero banner, everybody banner
 
 #hero-text, #everybody-text {
   position: absolute;
-  left: 40px;
-  font-size: 4rem;
+  left: 10%;
 }
 
 #hero-text {
-  top: 360px;
+  top: 65%;
+  font-size: 4.2rem;
 }
 
 #everybody-text {
-  top: 260px;
+  top: 10%;
+  font-size: 3.2rem;
 }
 
 /*
@@ -128,6 +130,9 @@ hero banner, everybody banner
 popular posts
 ===================================
 */
+section.pop-posts h2 {
+  margin-bottom: 0px;
+}
 
 article {
   width: 220px;
@@ -139,6 +144,8 @@ article {
   border-radius: 20%;
   background-color: #C9E7E9;
   overflow: hidden;
+  text-align: center;
+  position: relative;
 }
 
 article h3 {
@@ -147,40 +154,69 @@ article h3 {
   padding: 0px 14px;
 }
 
+article p {
+  text-align: justify;
+}
+
+.button-area {
+  position: absolute;
+  top: 210px;
+  width: 200px;
+  height: 20px;
+  display: table;
+}
+
 p.button {
   border: 1px solid #449EA5;
   border-radius: 12px;
   background-color: #C9E7E9;
   display: inline-block;
   width: 150px;
+  text-align: center;
+  vertical-align: bottom;
 }
 
 .button a {
   padding: 10px 12px;
 }
 
-
 /*
 ===================================
-join the club
+join the club, footer
 ===================================
 */
-#club-text {
+.column1 {
   width: 45%;
   margin: 0px 10px;
   float: left;
 }
 
-#club-image {
-  width: 45%;
-  margin: 10px;
+.column1 h2 {
+  text-align: center;
+  padding-right: 20px;
 }
 
-/*
-===================================
-footer
-===================================
-*/
+.column1 p {
+  text-align: justify;
+  padding: 5px;
+}
+
+footer .column1 {
+  padding: 10px 0px 10px 10px;
+}
+
+h4 {
+color: black;
+display: inline;
+font-size: .8rem;
+}
+
 #disclaimer {
   font-size: .8rem;
+  display: inline;
+}
+
+.column2 {
+  width: 45%;
+  margin: 10px;
 }
