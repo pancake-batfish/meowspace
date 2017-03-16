@@ -21,6 +21,7 @@ rust color: #9B5440;
 * {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  color: #449EA5;
 }
 
 h1, h2, h2 a {
@@ -29,19 +30,30 @@ h1, h2, h2 a {
 }
 
 h2 {
-  color: #538E42;
+  /*color: #538E42;*/
   padding-left: 10px;
 }
 
 h3 {
   font-style: italic;
   font-weight: 400;
+  color: black;
 }
 
 p {
   font-size: .95rem;
   font-weight: 300;
   line-height: 1.2;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #449EA5;
+}
+
+a:hover {
+  color: #9B5440;
 }
 
 /*
@@ -51,16 +63,6 @@ header
 */
 header {
   background-color: #C9E7E9;
-}
-
-
-header a {
-  text-decoration: none;
-  color: #538E42;
-}
-
-header a:hover {
-  color: #A58F44;
 }
 
 
@@ -83,21 +85,21 @@ header li {
 hero banner
 ===================================
 */
-#hero {
+#hero, #everybody {
   position: relative;
   clear: both;
 }
 
-#hero-image {
+#hero-image, #everybody-image {
   width: 100%;
 }
 
-#hero-text {
+#hero-text, #everybody-text {
   position: absolute;
   top: 260px;
   left: 40px;
   font-size: 4rem;
-  color: black;
+  /*color: black;*/
 }
 
 /*
@@ -107,12 +109,37 @@ popular posts
 */
 
 article {
-  width: 150px;
-  height: 200px;
+  width: 220px;
+  height: 270px;
   margin: 20px;
+  padding: 2px 8px;
   display: inline-block;
   border: 2px solid #449EA5;
+  border-radius: 20%;
+  background-color: #C9E7E9;
   overflow: hidden;
+}
+
+article h3 {
+  border-bottom: 2px solid #449EA5;
+  margin: 10px -10px 7px;
+  padding: 0px 14px;
+}
+
+p.button {
+  border: 1px solid #449EA5;
+  border-radius: 12px;
+  background-color: #C9E7E9;
+  display: inline-block;
+  width: 150px;
+}
+
+.button a {
+  padding: 10px 12px;
+}
+
+.button a:hover {
+  /*color: #A58F44;*/
 }
 
 /*
@@ -129,4 +156,13 @@ join the club
 #club-image {
   width: 45%;
   margin: 10px;
+}
+
+/*
+===================================
+footer
+===================================
+*/
+#disclaimer {
+  font-size: .8rem;
 }
